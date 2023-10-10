@@ -24,8 +24,11 @@ onBeforeUnmount(() => {
 
 <template>
   <div class="relative w-full h-full">
-      <div ref="mouseLightRef" class="hidden lg:block blur-xl opacity-0 fixed top-0 transform -translate-x-1/2 -translate-y-1/2 rounded-full left-0 pointer-events-none z-50 h-[800px] w-[800px] bg-color"></div>
-    <!-- <div class="pointer-events-none fixed inset-0 z-30 transition duration-300 lg:absolute" style=""></div> -->
+
+      <!-- Rounded Circle following the Pointer/Client(X + Y) position -->
+      <div ref="mouseLightRef" class="hidden lg:block blur-xl opacity-0 fixed top-0 transform -translate-x-1/2 -translate-y-1/2 rounded-full left-0 pointer-events-none z-50 h-[800px] w-[800px] bg-color">
+      </div>
+
     <div class="mx-auto min-h-screen max-w-screen-xl px-6 py-12 font-sans md:px-12 md:py-20 lg:px-24 lg:py-0">
       <div class="lg:flex lg:justify-between lg:gap-4">
 
@@ -45,7 +48,7 @@ onBeforeUnmount(() => {
 
 
           <!-- APIS integration section-->
-          <APISIntegrations></APISIntegrations>
+          <ApiIntegrations></ApiIntegrations>
 
           <!-- Footer -->
           <Footer></Footer>
